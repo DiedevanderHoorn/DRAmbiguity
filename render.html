@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Embedding Render</title>
+
+  <!-- Load D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <div id="original" style="margin-bottom:50px;"></div>
+  <div id="disambiguated"></div>
+
+  <!-- Load your renderer -->
+  <script src="render.js"></script>
+
+  <script>
+    d3.json("data/data.json").then(function(data) {
+
+      render(
+        data.original_embedding,
+        [],
+        "#original",
+        false
+      );
+
+      render(
+        data.disambiguated_embedding,
+        data.edges,
+        "#disambiguated",
+        true
+      );
+
+    });
+  </script>
+
+</body>
+</html>

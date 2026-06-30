@@ -1,0 +1,5 @@
+networkx
+umap-learn
+numpy
+python-igraph
+numpy
