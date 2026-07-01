@@ -100,4 +100,4 @@ plt.legend(title="Radius r",
            title_fontsize=20)
 
 plt.tight_layout()
-plt.savefig('number_of_neighbors_vs_splits_svhn_005_sequential.png', dpi=300)
+plt.savefig('fig_9.png', dpi=300)

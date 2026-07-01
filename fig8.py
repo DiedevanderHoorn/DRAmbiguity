@@ -4,7 +4,7 @@ import numpy as np
 import pyreadr
 import matplotlib.pyplot as plt
 import networkx as nx
-from graphdisambiguation_spectral_spars import GraphDisambiguation, create_UMAP_graph_and_embedding
+from graphdisambiguation import GraphDisambiguation, create_UMAP_graph_and_embedding
 from collections import defaultdict
 import numpy as np
 import matplotlib.pyplot as plt
